@@ -133,7 +133,7 @@ h1{
   font-weight: bold;
   margin-bottom: 10px;}
 .detail-title {
-  font-size: 14px;
+  font-size: 12px;
   color: #333;
   line-height: 1.5;}
 .read-more {
@@ -155,3 +155,44 @@ h1{
   color: #000;}
 .insta-link i:hover {
   color: #5C4525 ; }
+
+
+
+
+/*各WORKBOXについて*/
+.work-container{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: center;
+  margin-right:50px;
+  margin-left: 50px;
+  padding: 10px;}
+.card-link {
+  display: block;           
+  text-decoration: none;   
+  color: inherit; }
+.card-link .card {
+  cursor: pointer; }
+  
+.work-box{
+  margin-top:10px;
+  margin-bottom:20px;
+  padding: 15px;}
+.co-company{
+  font-size: 10px;
+  color: #888;
+  margin-bottom: 25px; }
+.work-todo{
+  margin-top:25px;
+  font-size: 12px;
+  color: #333;
+  line-height: 1.5;}
+.work-photo{
+  display:block;
+  text-align: center;
+  justify-content: space-between;
+  width: 100%;}
+.work-photo img{
+  height:auto;
+  margin-right:40px;}
