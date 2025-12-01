@@ -20,7 +20,7 @@
   width:95%;}
 a{
   text-decoration: none; 
-  color: black;        
+  color: #5C4525;        
   cursor:pointer;
   text-align:left;
   font-size:13px;
@@ -61,8 +61,9 @@ a{
   padding: 20px 0;
   margin-top:30px;}
 p{
+  line-height:20px;
   font-size: 10px;
-  margin-top:50px;
+  margin-top:10px;
   margin-left:10px;
   text-align:center;}
 .insta-link i {
@@ -90,8 +91,9 @@ img{
   margin-left:30px;
   width: 50%;}
 .about{
+  writing-mode: horizontal-tb;  
   font-size:10px;
-  line-height: 2;
+  line-height: 1.4;
   margin:35px 35px 5px 0;
   text-align:left;}
 
@@ -111,10 +113,10 @@ img{
   text-align:center;
   line-height:200%;
   font-size:12px;
-  margin:80px 30px 60px 30px;}
-h1{
-  margin-top:10px;
-  margin-bottom:10px;}
+  margin:90px 30px 60px 30px;}
+.mission-prebox{
+  margin: 40px;
+}
 
 /*detail-box*/
 .detail-box{
@@ -237,34 +239,55 @@ h1{
 
 
 /*cafemenu*/
+.wrap{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap:35px;
+  margin-top:30px;
+  width:90vw;}
+  @media(max-width:760px){
+  .wrap{flex-direction:column; }}
+.half { 
+  width:35vw;
+  flex: 1 1 45%;
+  max-width: 550px;}
 .menu-container{
-  background-color:#f9f0e2;
-  margin-left: 35px;
-  margin-right:15px;
-  height:150px;
-  width:45%;}
-.menu-card{
- display:flex;}
-.menu-image{
-  display: flex;
-  flex:1;
-  padding-top:20px;}
-.menu-image img{
-  width:65%;
-  height:110%;}
-.menu-box{
-  flex:1;
-  padding-top:20px;
-  padding-right: 20px;}
-h3{
-  line-height:1.5;
-  font-size:10px;
+  width: 70%;
+  flex: 0 0 550px;    
+  width:550px;
+  max-width:550px;
   color:#5C4525;
+  overflow: hidden; }
+.menu-card{
+ display:flex;
+ height:130px;
+ padding-top:20px;}
+.menu-image{
+  flex: 0 0 45%;
+  display: flex;
+  flex:1;}
+  /*menubox管轄*/
+.menu-image img{
+  object-fit: cover;
+  margin-left:50px;
+  width:80%;
+  height:160%;}
+.menu-box{
+  margin-left:8px;
+  margin-top:15px;
+  flex:1;
+  height:160%;}
+h3{
+  line-height:1.8;
   font-family:"Yu Mincho", serif;}
+.price{
+  margin-bottom:9px;}
 .btn--green,
 a.btn--green{
-  font-size:4px;
-  padding:9px;
+  font-size: 8px;
+  padding:12px;
   color:#fff;
   background-color: #61794d;}
 .btn--green,
@@ -272,8 +295,35 @@ a.btn--green:hover{
  cursor: pointer;}
 a.btn--radius{
   border-radius:100vh;}
+  /*menucontainerの分野*/
 .menu-detail{
-  font-size:7px;
-  line-height:1.6;
+  margin:0;
+  margin:85px 75px 0 50px;
+  display: flex;
   color:#5C4525;
+  line-height:1.6;
   font-weight:350;}
+
+/*cursor*/
+.slider {
+  position: relative;
+  width: var(--width, 2000px);
+  height: var(--height, 150px);
+  overflow: hidden;
+  margin-top: 100px;
+  margin-bottom:30px;
+  padding: 5px;}
+.slider .list {
+  display: flex;
+  gap: 5px;
+  padding: 0;
+  margin: 0;
+  list-style: none;}
+.slider .item {
+  flex: 0 0 auto;
+  width: var(--width, 1500px);
+  height: var(--height, 150px);}
+.slider .item img {
+  width: 60%;
+  height: 60%;
+  object-fit: cover;}
