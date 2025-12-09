@@ -305,25 +305,60 @@ a.btn--radius{
   font-weight:350;}
 
 /*cursor*/
-.slider {
-  position: relative;
-  width: var(--width, 2000px);
-  height: var(--height, 150px);
-  overflow: hidden;
-  margin-top: 100px;
-  margin-bottom:30px;
-  padding: 5px;}
-.slider .list {
+.menucard-slider {
   display: flex;
-  gap: 5px;
-  padding: 0;
-  margin: 0;
-  list-style: none;}
-.slider .item {
-  flex: 0 0 auto;
-  width: var(--width, 1500px);
-  height: var(--height, 150px);}
-.slider .item img {
-  width: 60%;
-  height: 60%;
-  object-fit: cover;}
+  width: 90%;
+  margin:80px 100px 150px 0px;
+  padding: 10px;
+  overflow: visible;}
+
+
+.menucard {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  aspect-ratio: 1 / 1; }
+
+.product-img,
+.menu-explain {
+  position: absolute;
+  width: 120%;       
+  height: 150%;      
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  transition: opacity 0.5s ease;}
+
+
+.menu-explain {
+  opacity: 0;
+  pointer-events: none;}
+
+.menucard:hover .product-img {
+  opacity: 0;}
+
+.menucard:hover .menu-explain {
+  opacity: 1;}
+
+
+
+.swiper-button-next,
+.swiper-button-prev {  
+  width: 0;
+  height: 0;
+  background: none;     /* 元の背景を消す */
+  color: transparent;   /* テキスト（SVG）を消す */
+  border: none;
+  transform: translateY(-150%);}
+
+.swiper-button-prev {
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 20px solid #ccc; 
+  left: 15px; }
+.swiper-button-next {
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 20px solid #ccc;  /* 三角形の色 */
+  right: -45px;  /* 位置調整 */}
+

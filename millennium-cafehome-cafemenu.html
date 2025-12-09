@@ -6,7 +6,9 @@
     <meta content="width=device-width,initial-scale=1.0">
 <title>millennium|cafemenu</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 <link rel="stylesheet" href="millennium-style.css">
+
 </head>
 
 <body>
@@ -77,22 +79,46 @@
     </div>
 </div>
 
-<div tabindex="0" class="slider" style="--width: 200px;
-                                        --height: 200px;
-                                        --quantity: 10;
-                                        --duration: 30s;">
-     <ul class="list">
-        <li class="item" style="--curry:1">
-            <img src="https://github.com/kokona-jyamu/millennium-1/blob/main/picture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202025-11-30%20113011.png?raw=true" alt="">
-        </li>
-        <li class="item" style="--pannacotta:2">
-            <img src="https://github.com/kokona-jyamu/millennium-1/blob/main/picture/25.dec.pannacotta.png?raw=true" alt="">
-        </li>
-        <li class="item" style="--cake:3">
-            <img src="https://github.com/kokona-jyamu/millennium-1/blob/main/picture/25.dec.pannacotta.png?raw=true" alt="">
-        </li>
-        </li>
-     </ul>
-            
+
+
+<div class="swiper menucard-slider">
+  <div class="swiper-wrapper">
+
+    <div class="swiper-slide menucard">
+      <div class="product-img">
+          <img src="https://github.com/kokona-jyamu/millennium-1/blob/main/picture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202025-11-30%20113011.png?raw=true" class="">
+      </div>
+      <div class="menu-explain">
+          <img src="https://github.com/kokona-jyamu/millennium-1/blob/main/picture/mille-%E3%82%AD%E3%83%BC%E3%83%9E%E3%82%AB%E3%83%AC%E3%83%BC%E8%AA%AC%E6%98%8E%E6%96%87.png?raw=true" class="">
+      </div>
+    </div>
+
+    <div class="swiper-slide menucard">
+      <div class="product-img">
+          <img src="https://github.com/kokona-jyamu/millennium-1/blob/main/25.dec.pannacotta.ver2.png?raw=true" class="">
+      </div>
+      <div class="menu-explain">
+          <img src="https://github.com/kokona-jyamu/millennium-1/blob/main/mille-panna%E8%AA%AC%E6%98%8E%E6%96%87.png?raw=true" class="">
+      </div>
+    </div>
+
+    <div class="swiper-slide menucard">
+      <div class="product-img">
+          <img src="https://github.com/kokona-jyamu/millennium-1/blob/main/picture/25.dec.cheesecake.ver2.png?raw=true" class="">
+      </div>
+      <div class="menu-explain">
+          <img src="https://github.com/kokona-jyamu/millennium-1/blob/main/picture/mille-cheesecake%E8%AA%AC%E6%98%8E%E6%96%87.png?raw=true" class="">
+      </div>
+    </div>
+
+  </div>
+
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="millennium-script.js"></script>
+
 
 </body>  
