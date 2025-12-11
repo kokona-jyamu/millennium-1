@@ -305,16 +305,19 @@ a.btn--radius{
   font-weight:350;}
 
 /*cursor*/
-.menucard-slider {
+.swiper-menucard-slider {
   width: 90%;  
-  margin: 90px 0 150px 0;    
-  margin-left:40px;}
+  margin: 90px 50px 150px 50px;    }
 
 .swiper-wrapper {
   display: flex !important;
-  justify-content: flex-start !important;
-  margin-left:40px;
-  padding: 0 !important;}
+  align-items: flex-start;}
+
+.swiper {
+  margin: 100px auto;}
+
+.swiper-slide img {
+  width: 80%;}
 
 
 .menucard {
@@ -322,11 +325,13 @@ a.btn--radius{
   align-items: center;
   overflow: hidden;
   aspect-ratio: 1 / 1; 
-  margin: 0 auto;}
+  margin: 0 !important;
+  margin-left:10px;}
 
 .product-img,
 .menu-explain {
   position: absolute;
+  display: block;
   width: 100%;       
   height: 100%;      
   left:0;
@@ -339,11 +344,8 @@ a.btn--radius{
   opacity: 0;
   pointer-events: none;}
 
-.menucard:hover .product-img {
-  opacity: 0;}
-
-.menucard:hover .menu-explain {
-  opacity: 1;}
+.menucard:hover .product-img { opacity: 0; }
+.menucard:hover .menu-explain { opacity: 1; }
 
 
 
@@ -355,18 +357,18 @@ a.btn--radius{
   color: transparent;
   border: none;
   position: absolute;
-  top: 30%;
+  top: 40%;
   transform: translateY(-50%); /* ←中央 */
   z-index: 20;}
 
 .swiper-button-prev {
-  border-top: 15px solid transparent;
-  border-bottom: 15px solid transparent;
-  border-right: 20px solid #ccc; 
-  left: 20px; }
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 15px solid #ccc; 
+  left: -2px; }
 .swiper-button-next {
-  border-top: 15px solid transparent;
-  border-bottom: 15px solid transparent;
-  border-left: 20px solid #ccc;  /* 三角形の色 */
-  right: -1px;  /* 位置調整 */}
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid #ccc;  /* 三角形の色 */
+  right: 0px;  /* 位置調整 */}
 

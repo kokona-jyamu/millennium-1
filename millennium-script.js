@@ -1,7 +1,7 @@
 // Swiper 設定（手動）
-const swiper = new Swiper(".menucard-slider", {
+const swiper = new Swiper(".swiper-menucard-slider", {
   slidesPerView: 3,
-  spaceBetween: 10,
+  spaceBetween: 4,
   loop: false,
   navigation: {
     nextEl: ".swiper-button-next",
