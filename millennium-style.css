@@ -246,6 +246,7 @@ img{
   justify-content: center;
   gap:35px;
   margin-top:30px;
+  margin-bottom:120px;
   width:90vw;}
   @media(max-width:760px){
   .wrap{flex-direction:column; }}
@@ -312,21 +313,19 @@ a.btn--radius{
   color: #5C4525;
   display: inline-block;
   position:relative;
-  margin-top:120px;
   font-size:12px;
   left: 50%;
   transform: translateX(-50%);}
 /*cursor*/
 .swiper-menucard-slider {
-  width: 90%;  
-  margin: 90px 50px 150px 50px;    }
+  width: 90%;    }
 
 .swiper-wrapper {
   display: flex !important;
   align-items: flex-start;}
 
 .swiper {
-  margin: 100px auto;}
+  margin: 40px auto;}
 
 .swiper-slide img {
   width: 80%;}
@@ -349,7 +348,7 @@ a.btn--radius{
   left:0;
   top: 0;
   object-fit: cover;
-  transition: opacity 0.5s ease;}
+  transition: opacity 0.7s ease;}
 
 
 .menu-explain {
