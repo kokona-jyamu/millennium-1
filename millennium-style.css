@@ -358,8 +358,6 @@ a.btn--radius{
 .menucard:hover .product-img { opacity: 0; }
 .menucard:hover .menu-explain { opacity: 1; }
 
-
-
 .swiper-button-next,
 .swiper-button-prev {  
   width: 0;
@@ -382,4 +380,31 @@ a.btn--radius{
   border-bottom: 10px solid transparent;
   border-left: 15px solid #ccc;  /* 三角形の色 */
   right: 0px;  /* 位置調整 */}
+
+
+
+/*mokumoku*/
+.concept-box{
+  width: 85%;
+  max-width: 650px;   
+  height: 220px;     
+  border: 1px solid #453322;
+  background-color:#FBF7E4;
+  margin: 30px auto;
+  /* 中央揃え （上下左右）*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+  transition:transform 1s ease;             
+  transform: translateY(10px); }
+.concept-box:hover{
+  transform: scale(1.05);}
+.concept-text {
+  text-align: center;   /* 文字を左右中央 */
+  line-height: 1.7;
+  color:#5C4525;
+  font-size: 13px;}
+
 
