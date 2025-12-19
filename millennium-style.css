@@ -436,7 +436,7 @@ a.btn--radius{
 
 .mokumoku-contact-button{
   width: 80%;
-  margin: 50px auto;
+  margin: 70px auto;
   display:flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -457,3 +457,73 @@ a.btn--green:hover{
  cursor: pointer;}
 a.btn--radius{
   border-radius:100vh;}
+
+/*calender*/
+.calendar-wrap {
+  width: min(80%, 700px);
+  margin: 40px auto;
+  padding: 25px;
+  background-color: #FBF7E4;
+  border-radius: 18px;
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+}
+.calendar-title {
+  text-align: center;
+  color:#5C4525;
+  font-size: clamp(18px, 4vw, 24px);
+  letter-spacing: 0.08em;
+  margin-bottom: 20px;
+}
+/* グリッド */
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  border: 1.5px solid #453322;
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+/* 曜日 */
+.day-name {
+  text-align: center;
+  padding: 10px 0;
+  color: #453322;
+  font-size: 13px;
+  background: rgba(255, 255, 255, 0.4);
+  border-bottom: 1px dashed #453322;
+}
+/* 日付マス */
+.day {
+  min-height: 90px;
+  padding: 8px;
+  font-size: 14px;
+  color: #453322;
+  border-right: 1px dashed #453322;
+  border-bottom: 1px dashed #453322;
+  background-color: rgba(255, 255, 255, 0.25);
+  box-sizing: border-box;
+  position: relative;
+}
+/* 木曜のマスに◎を表示 */
+.calendar-grid .day:nth-child(7n + 12)::after {
+  content: "moku";
+  position: absolute;
+  bottom: 6px;
+  right: 13px;
+  font-size: 16px;
+  color: #453322;
+  opacity: 0.8;
+}
+/* 右端の線消し */
+.calendar-grid > :nth-child(7n) {
+  border-right: none;
+}
+/* 最下段の線消し */
+.calendar-grid > :nth-last-child(-n + 7) {
+  border-bottom: none;
+}
+/* 空白 */
+.day.empty {
+  background: transparent;
+}
+
