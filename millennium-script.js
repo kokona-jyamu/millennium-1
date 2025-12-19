@@ -14,16 +14,6 @@ const swiper = new Swiper(".swiper-menucard-slider", {
   }
 });
 
-//mokumoku-calendarについて
-document.addEventListener("DOMContentLoaded", () => {
-  const button = document.getElementById("go-calendar");
-
-  button.addEventListener("click", () => {
-    document.getElementById("calendar").scrollIntoView({
-      behavior: "smooth"
-    });
-  });
-});
 
 
 

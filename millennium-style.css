@@ -461,7 +461,7 @@ a.btn--radius{
 /*calender*/
 .calendar-wrap {
   width: min(80%, 700px);
-  margin: 40px auto;
+  margin: 80px auto;
   padding: 25px;
   background-color: #FBF7E4;
   border-radius: 18px;
@@ -527,3 +527,13 @@ a.btn--radius{
   background: transparent;
 }
 
+/*mokumoku-menu*/
+.mokumoku-menu{
+  text-align: center;
+  color:#5C4525;
+  font-size: clamp(18px, 4vw, 24px);
+  letter-spacing: 0.08em;
+  line-height: 35px;
+  margin-bottom: 20px;
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+}
