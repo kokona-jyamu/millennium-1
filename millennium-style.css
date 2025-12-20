@@ -295,7 +295,6 @@ a.btn--radius{
 .swiper-slide img {
   width: 80%;}
 
-
 .menucard {
   position: relative;
   align-items: center;
@@ -496,3 +495,36 @@ a.btn--radius{
   margin-bottom: 20px;
   font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
 }
+
+/*ws*/
+.workshopcard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap:40px;
+  margin:100px 30px;}
+@media(max-width:360px){
+  .workshopcard{flex-direction:column; }}
+
+.ws-product-img{
+  position: static;
+  flex: 0 0 40%;
+  margin-left: 30px;}
+.ws-product-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.workshop-detail {
+  flex:0.8;
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+  margin-right:30px;
+}
+.workshop-detail h6{
+  text-align: center;
+}
+
+
+
+
+
