@@ -497,28 +497,33 @@ a.btn--radius{
 }
 
 /*ws*/
+.wrap{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin:100px 30px;}
 .workshopcard {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap:40px;
-  margin:100px 30px;}
-@media(max-width:360px){
+  width: 90%;
+  max-width:700px;  
+  gap:10px;
+  margin:0 auto;
+}
+@media(max-width:760px){
   .workshopcard{flex-direction:column; }}
 
 .ws-product-img{
-  position: static;
-  flex: 0 0 40%;
-  margin-left: 30px;}
+  flex: 0 0 300px;
+}
 .ws-product-img img {
-  width: 100%;
-  height: auto;
-  display: block;
+  width: 90%;
 }
 .workshop-detail {
-  flex:0.8;
-  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
-  margin-right:30px;
+  max-width:380px;
+  font-size: clamp(10px, 2.8vw, 13px);
+  color:#5C4525;
 }
 .workshop-detail h6{
   text-align: center;
