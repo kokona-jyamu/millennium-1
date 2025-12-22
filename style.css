@@ -183,6 +183,26 @@ img{
 
 
   /*eventinformation*/
+.page-cafehome {
+  position: relative;
+  background:
+    radial-gradient(
+      circle at top, rgba(211, 206, 190, 0.25),transparent 30%),
+    linear-gradient(
+      to bottom,#fff);}
+.page-mokumoku::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index:0;
+  background-image:
+    linear-gradient(
+      rgba(171, 163, 148, 0.05) 3px, transparent 1px),
+    linear-gradient(
+      90deg, rgba(171, 163, 148, 0.05) 3px,transparent 1px);
+  background-size: 20px 20px;}
+
 .event-container{
   display:flex;
   flex-wrap: wrap;
