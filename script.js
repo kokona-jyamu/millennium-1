@@ -17,7 +17,7 @@ const swiper = new Swiper(".swiper-menucard-slider", {
 
 //contact-form
 
-  $('form').submit(function(e){
+  $('#contact-form').submit(function(e){
         e.preventDefault();
 
     const name = $('#name').val();
