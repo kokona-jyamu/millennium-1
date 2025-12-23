@@ -16,7 +16,7 @@ const swiper = new Swiper(".swiper-menucard-slider", {
 
 
 //contact-form
-$(function () {
+
   $('form').submit(function(e){
         e.preventDefault();
 
@@ -41,7 +41,6 @@ $(function () {
     }));
     alert('送信しました');
   });
-});
 
  
 
