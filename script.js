@@ -15,5 +15,33 @@ const swiper = new Swiper(".swiper-menucard-slider", {
 });
 
 
+//contact-form
+$(function () {
+  $('form').submit(function(e){
+        e.preventDefault();
 
+    const name = $('#name').val();
+    const kana = $('#name-2').val();
+    const mail = $('#mail').val();
+    const coments = $('#coments').val();
+    if (!contactData.name || !contactData.kana || !contactData.mail || !contactData.coments) {
+      alert('未入力の項目があります');
+      return;
+    }
+
+    if (!contactData.mail.includes('@')) {
+      alert('正しいメールアドレスを入力してください');
+      return;
+    }
+    localStorage.setItem('contact', JSON.stringify({
+      name: name,
+      kana: kana,
+      mail: mail,
+      coments: coments
+    }));
+    alert('送信しました');
+  });
+});
+
+ 
 

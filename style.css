@@ -234,15 +234,15 @@ img{
   margin-bottom:120px;
   width:90vw;}
   @media(max-width:760px){
-  .wrap{flex-direction:column; }}
+  .wrap{flex-direction: column; }}
 .half { 
   width:35vw;
   flex: 1 1 45%;
   max-width: 550px;}
 .menu-container{
   width: 70%;
-  flex: 0 0 550px;    
-  width:550px;
+  flex: 0 0 500px;    
+  width:500px;
   max-width:550px;
   color:#5C4525;
   overflow: hidden; }
@@ -550,6 +550,48 @@ a.btn--radius{
 }
 
 
+/*contact*/
+.explain{
+  color:#453322;
+  line-height: 2.9;
+  text-align: center;
+}
+.contact-wrapper {
+  max-width: 500px;
+  margin: 60px auto;
+}
+
+.contact-form {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+input:focus {
+  outline: none;                 /* オレンジ枠を消す */
+  border: 1.5px solid #61794d;     /* 落ち着いた緑 */
+}
+button {
+  display: block;
+  margin: 30px auto 0;
+  width: 200px;
+  padding: 12px;
+  background-color: #61794d;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+button:hover {
+  opacity: 0.85;
+}
 
 
 
