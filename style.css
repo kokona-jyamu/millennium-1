@@ -600,22 +600,23 @@ button:hover {
 }
 
 /*company*/
+.company-introduce{
+  margin:0 auto;
+  margin:50px 80px;
+  align-items: center;
+}
 .company-tab{
   display: flex;
-  flex-direction: row;
-  font-family: sans-serif;
   align-items: center;
+  font-family: sans-serif;
   color:#453322;
-  gap:400px;
-  margin:20px 0 auto;
-  margin-left: 80px;
-  margin-right: 80px;
-}
+  flex-direction: row;
+  }
 .company-tab h4{
-  float:left;
+
 }
 .company-tab p{
-  float:right;
+ 
 }
 
 
