@@ -182,8 +182,9 @@ img{
   position:absolute;
   right:35px;
   bottom: 15px;
-  padding: 6px 10px;
+  padding: 10px 10px;
   font-size: 10px;
+  border-radius: 100vh;
   cursor: pointer;}
 
 
@@ -599,4 +600,22 @@ button:hover {
 }
 
 /*company*/
+.company-tab{
+  display: flex;
+  flex-direction: row;
+  font-family: sans-serif;
+  align-items: center;
+  color:#453322;
+  gap:400px;
+  margin:20px 0 auto;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+.company-tab h4{
+  float:left;
+}
+.company-tab p{
+  float:right;
+}
+
 

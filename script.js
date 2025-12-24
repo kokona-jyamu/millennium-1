@@ -42,5 +42,7 @@ const swiper = new Swiper(".swiper-menucard-slider", {
     alert('送信しました');
   });
 
- 
+
+//company
+
 
