@@ -1,3 +1,23 @@
+//ローディング画面
+// DOM取得
+const loading = document.getElementById("loading");
+document.body.classList.add("loading");
+// ページ読み込み完了後
+window.addEventListener("load", () => {
+  // 1秒待つ
+  setTimeout(() => {
+    // 上にスライド
+    loading.classList.add("hide");
+    // スクロール解除
+    document.body.classList.remove("loading");
+  }, 3500);
+});
+
+targets.forEach(target => {
+  observer.observe(target);
+});
+
+
 // Swiper 設定（手動）
 const swiper = new Swiper(".swiper-menucard-slider", {
   slidesPerView: 3,
@@ -44,5 +64,6 @@ const swiper = new Swiper(".swiper-menucard-slider", {
 
 
 //company
+
 
 
